@@ -4,11 +4,13 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   CardTitle,
-  Row,
-  Col,
+
 } from "reactstrap";
+
+import Row from "reactstrap/lib/Row";
+import Col from "reactstrap/lib/Col";
+
 
 // core components
 import { predictiongraph } from "../variables/charts";
@@ -185,27 +187,28 @@ function Dashboard() {
     loadLineChartDatatwo();
   }, []);
 
+
   return (
     <>
       <div className="content">
-        <Row>
+        <Row widths={["xs", "sm", "md", "lg", "xl"]}>
           <Col md="12">
             <Card>
               <CardHeader>
                 <CardTitle tag="h5">Generation Prediction</CardTitle>
                 <p className="card-category">24 Hours Forecast (MW)</p>
               </CardHeader>
-              <CardBody>
+              {/* <CardBody>
                 {lineChartDataone.labels.length > 0 ? (
                   <Line data={lineChartDataone} options={predictiongraph.options} />
                 ) : (
                   <p>Loading line chart data...</p>
                 )}
-              </CardBody>
+              </CardBody> */}
             </Card>
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col md="4">
             <Card>
               <CardHeader>
@@ -226,7 +229,7 @@ function Dashboard() {
               </CardBody>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </>
   );
