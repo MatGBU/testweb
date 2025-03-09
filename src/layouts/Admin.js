@@ -3,12 +3,12 @@ import React from "react";
 import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import DemoNavbar from "./components/Navbars/DemoNavbar.js";
+import DemoNavbar from "../components/Navbars/DemoNavbar.js";
 
-import Sidebar from "./components/Sidebar/Sidebar.js";
+import Sidebar from "../components/Sidebar/Sidebar.js";
 
 
-import routes from "routes.js";
+import routes from "../routes.js";
 
 var ps;
 

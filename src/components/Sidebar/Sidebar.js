@@ -22,7 +22,7 @@ import { Nav } from "reactstrap";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 
-import logo from "logo.svg";
+import logo from "../../logo.svg";
 
 var ps;
 
@@ -58,7 +58,7 @@ function Sidebar(props) {
           className="simple-text logo-mini"
         >
           <div className="image">
-            <img alt="..." src={require("assets/img/ecologo.png")} />
+            <img alt="..." src={require("../../assets/img/ecologo.png")} />
            </div>
         </a>
         <a
